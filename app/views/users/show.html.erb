@@ -5,6 +5,7 @@
       <img src="http://8900-presscdn-0-84.pagely.netdna-cdn.com/wp-content/themes/beautycon/assets/img/avatar-grey.png" height="250">
     </div>
     <div class="info">
+      <strong><%= @user.admin ? "Admin" : "" %></strong>
       <p>
         <strong>Name: </strong> <%= @user.name %>
       </p>
