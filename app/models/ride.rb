@@ -35,11 +35,11 @@ class Ride < ActiveRecord::Base
       :nausea => new_nausea,
       :tickets => new_tickets
     )
-    "Thanks for riding the #{self.attraction.name}"
+    "Thanks for riding the #{self.attraction.name}!"
   end
 
   def ticket_issue
-    "You do not have enough tickets to ride the #{self.attraction.name}"
+    "You do not have enough tickets the #{self.attraction.name}"
   end
 
   def height_issue
